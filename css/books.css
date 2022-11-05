@@ -1,0 +1,243 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+#overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #5D5C61F5;
+  padding: 0;
+  margin: 0;
+  z-index: 2000;
+}
+.bookdetail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  overflow: scroll;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-color: #5D5C61F5;
+  width: 25%;
+  height: 70%;
+  opacity: 1;
+}
+.bookdetail>*{
+
+}
+.bookdisp{
+  width: 150px;
+
+}
+ [id*="h4"]{
+   color: black;
+   text-align: center;
+       }
+ #imgd{
+   object-fit: contain;
+   width : 150px;
+   margin: auto;
+ }
+ .header{
+   display: flex;
+   width: 100vw;
+   height: 80px;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-items: center;
+   background-image: linear-gradient(to right, #00b2ff , #109100);
+ }
+ .reg{
+   height: inherit;
+   width: auto;
+ }
+ .logo{
+   height: inherit;
+   width: inherit;
+   padding: 10px;
+   margin-left: 40px;
+ }
+ .navbar{
+   display: flex;
+   margin: 0;
+   padding: 0;
+   flex-flow: row nowrap;
+   overflow: hidden;
+   justify-content: flex-start;
+   align-items: center;
+   width: auto;
+   margin-left: 20px;
+ }
+ .navbar ul{
+   display: flex;
+   flex-flow: row nowrap;
+   overflow: visible;
+   justify-content: space-between;
+   width: inherit;
+   gap: 30px;
+   align-items: center;
+   list-style: none;
+ }
+ .navbar ul li a{
+   text-decoration: none;
+   color: #f2f2f2;
+   font-size: 17px;
+ }
+ .navbar ul li a:hover{
+   text-decoration: none;
+   color: #00570e;
+   font-size: 17px;
+ }
+ .log{
+   height: inherit;
+   width: inherit;
+   padding: 20px;
+ }
+ .user{
+   height: inherit;
+   width: auto;
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: flex-end;
+   margin-right: 40px;
+   overflow: visible;
+ }
+ #userinfo{
+   display: flex;
+   flex-flow: column nowrap;
+   overflow: visible;
+   position:fixed;
+   margin-top:80px;
+   width:auto;
+   height:auto;
+   overflow-x:hidden;
+   margin-left:auto;
+   display: none;
+   background-color: yellow;
+ }
+ .search{
+   width: 20%;
+   margin-left: auto;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: flex-start;
+   align-items: flex-start;
+   overflow: scroll;
+ }
+
+ #myInput {
+   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+   background-position: 10px 12px; /* Position the search icon */
+   background-repeat: no-repeat; /* Do not repeat the icon image */
+   width: 100%; /* Full-width */
+   font-size: 16px; /* Increase font-size */
+   padding: 3px 5px 3px 10px; /* Add some padding */
+   border: 1px solid #ddd; /* Add a grey border */
+   border-radius: 5px;
+ }
+ #myUL {
+   /* Remove default list styling */
+   list-style-type: none;
+   display: flex;
+   flex-flow: column nowrap;
+   width: 20%;
+   padding: 0;
+   margin: 26px 0px 0px 0px;
+   z-index: 1;
+   position: absolute;
+   z-index: 1000;
+   overflow-y: scroll;
+   max-height: 100vh;
+ }
+ #myUL li {
+   display: none;
+   width: 100%;
+
+ }
+ #myUL li a {
+   border: 1px solid #ddd; /* Add a border to all links */
+   margin-top: -1px; /* Prevent double borders */
+   background-color: #f6f6f6; /* Grey background color */
+   padding: 12px; /* Add some padding */
+   text-decoration: none; /* Remove default text underline */
+   font-size: 18px; /* Increase the font-size */
+   color: black; /* Add a black text color */
+   display: block; /* Make it into a block element to fill the whole list */
+   width: 100%;
+ }
+
+ #myUL li a:hover:not(.header) {
+   background-color: #eee; /* Add a hover effect to all links, except for headers */
+ }
+
+.vid{
+  width: 100%;
+  background-color: red;
+  height: 200px;
+  float: left;
+}
+.main{
+  width: 80%;
+  max-width: 80%;
+  height: 90vh;
+  float: left;
+  background-color: rgba(31, 31, 31, 1);
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.form-title{
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  padding-top: 10px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: solid 1px white;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: inherit;
+  font-size: 30px;
+  width: 150px;
+
+}
+.kontena{
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(31, 31, 31, 1);
+  overflow-x: scroll;
+}
+.items{
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 0 0 150px;
+  align-self: center;
+}
+.book{
+  width:150px;
+  height: 250px;
+  object-fit: cover;
+}
